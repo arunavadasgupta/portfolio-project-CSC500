@@ -1,4 +1,4 @@
-# Online Shopping Cart — Final Project
+# Online Shopping Cart Final Project
 
 A Python console application that lets a customer browse a product catalogue, add items, manage quantities, and review a simulated checkout. The project demonstrates object-oriented design, CSV input, and input validation.
 
@@ -16,28 +16,24 @@ Enter a customer name and delivery address. The program checks that the address 
 
 | Key | Action |
 |---|---|
-| `1` | Browse categories, search by product name, and add a catalogue item. |
+| '1` | Browse categories, search by product name, and add a catalogue item. |
 | `2` | Manage the shopping cart. |
-| `3` | Review the order and confirm or cancel simulated checkout. |
+| `3' | Review the order and confirm or cancel simulated checkout. |
 | `4` | Quit the program. |
 
 ## Manage My Cart
 
-| Key | Action |
-|---|---|
 | `a` | Add an item. Choose `1` to enter a name, description, price, and quantity manually, or `2` to browse the catalogue. Choose `0` to go back. |
-| `r` | Select a numbered cart row and remove units. Confirm before removing all remaining units. |
+| `r' | Select a numbered cart row and remove units. Confirm before removing all remaining units. |
 | `c` | Select a numbered row and use `+` or `-` to increase or decrease its quantity. A decrease to zero requires removal confirmation. |
 | `i` | Display the numbered item table and available descriptions. |
-| `o` | Display the item costs, total quantity, subtotal, tax, shipping, and grand total. |
+| `o' | Display the item costs, total quantity, subtotal, tax, shipping, and grand total. |
 | `q` | Return to the main menu. |
 
 The subtotal is the sum of each item's unit price multiplied by its quantity. The grand total adds **8% tax** and **$10.00 shipping**. Checkout blocks empty orders and does not process a real payment.
 
 ## Project files
 
-| File | Purpose |
-|---|---|
 | `main.py` | Coordinates customer setup, menus, and checkout. |
 | `item_to_purchase.py` | Stores item details and calculates and displays each line cost. |
 | `shopping_cart.py` | Stores cart items and handles additions, removals, quantity changes, and totals. |
